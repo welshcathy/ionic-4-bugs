@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="menuOne"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-title>Should show menu one</ion-title> -->
+
+  <!-- <ion-button [routerLink]="['/list']">    Goto link page  </ion-button> -->
+
+  <form [formGroup]="newLineForm" (ngSubmit)="onSubmit()">
+    <ion-label>Date</ion-label>
+    <ion-input readonly formControlName="dateOne" [liIonic4Datepicker]="datePickerObj"></ion-input>
+
+  </form>
+  <!-- <ion-input readonly [(ngModel)]="dateTwo" [liIonic4Datepicker]="datePickerObj"></ion-input> -->
+
+
+
+</ion-content>
